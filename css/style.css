@@ -24,6 +24,20 @@ body {
   min-height: 100dvh;
 }
 
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+h3 {
+  font-size: 16px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -43,13 +57,30 @@ header nav ul {
   }
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  h1 {
+    color: var(--dark-green);
+    font-size: 20px;
+
+    span {
+      color: var(--orange);
+    }
+  }
+}
+
 header,
 main {
   padding: 20px;
-}
-
-h2 {
-  text-align: center;
 }
 
 .site-button {
@@ -154,12 +185,6 @@ main {
   }
 }
 
-.visual-identity {
-  h4 {
-    text-align: center;
-  }
-}
-
 .visual-identity__div {
   display: flex;
   gap: 20px;
@@ -199,13 +224,13 @@ main {
   }
 }
 
-.typography__article {
+.content__article {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
 
-  h4 {
+  h3 {
     width: 25%;
   }
 
@@ -216,6 +241,23 @@ main {
 
 .site-map img {
   width: 100%;
+}
+
+.prototype__section {
+  display: flex;
+  justify-content: space-around;
+
+  h4 {
+    width: 25%;
+  }
+
+  a {
+    color: var(--dark-green);
+  }
+
+  a:hover {
+    font-weight: 700;
+  }
 }
 
 footer {
@@ -230,6 +272,14 @@ footer {
     gap: 20px;
   }
 
+  /* index.html */
+  .equipo__section div {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* avances.html */
   .visual-identity__div {
     flex-direction: column;
 
@@ -245,5 +295,13 @@ footer {
 
   .color-palette-container {
     flex-wrap: wrap;
+  }
+
+  .content__article {
+    flex-direction: column;
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
