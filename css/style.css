@@ -178,6 +178,11 @@ main {
   width: 75%;
 }
 
+.visual-identity__description {
+  padding: 20px;
+  text-align: justify;
+}
+
 .color-palette-container {
   display: flex;
   justify-content: center;
@@ -191,6 +196,21 @@ main {
     border-radius: 10px;
     align-content: center;
     text-align: center;
+  }
+}
+
+.typography__article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+
+  h4 {
+    width: 25%;
+  }
+
+  p {
+    text-align: justify;
   }
 }
 
@@ -212,6 +232,15 @@ footer {
 
   .visual-identity__div {
     flex-direction: column;
+
+    align-items: center;
+    .visual-identity__logo {
+      width: 100%;
+    }
+
+    .visual-identity__colors {
+      width: 100%;
+    }
   }
 
   .color-palette-container {
