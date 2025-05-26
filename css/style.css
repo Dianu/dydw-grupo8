@@ -263,7 +263,10 @@ main {
 footer {
   background-color: var(--light-green);
   padding: 30px;
-  text-align: center;
+
+  p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 720px) {
