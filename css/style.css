@@ -29,6 +29,9 @@ h3,
 h4 {
   text-align: center;
 }
+h2 a{
+  color: #000;
+}
 
 p {
   text-align: justify;
@@ -307,4 +310,19 @@ footer {
       text-align: center;
     }
   }
+}
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
 }
